@@ -28,13 +28,13 @@ Bot Owner Only
 """
 
 ABOUT = """
-♻️ Name :  ROBERT DOWNEY JR
+♻️ Name :  **ROBERT DOWNEY JR**
     
-♻️ Creator : [@MOHD_HANEEN]
+♻️ Creator : **@MOHD_HANEEN**
 
-♻️ Language : Python3
+♻️ Language : **Python3**
 
-♻️ Library : Pyrogram Asyncio 1.13.0
+♻️ Library : **Pyrogram Asyncio 1.13.0**
 
-♻️ MAIN CHANNEL : [Click Me](https://t.me/cinemacenterofficial)
+♻️ MAIN CHANNEL : [MAIN CHANNEL](https://t.me/cinemacenterofficial)
 """
