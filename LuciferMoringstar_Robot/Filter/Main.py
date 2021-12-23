@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"** Title:** {search}\n** ♻️Rating:** {random.choice(RATING)}\n** ♻️Genre:** ♻️{random.choice(GENRES)}\n** ♻️Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"** Title:** {search}\n**♻️Rating:**{random.choice(RATING)}\n**♻️Genre:**♻️{random.choice(GENRES)}\n**♻️Uploaded by {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -127,7 +127,7 @@ async def group(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton📃(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")📃]
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                 )
         else:
             return
@@ -355,4 +355,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀",show_alert=True)
+        await query.answer("ഈ ഫയൽ ബ്രോയ്ക്ക് ഉള്ളത് അല്ല",show_alert=True)
