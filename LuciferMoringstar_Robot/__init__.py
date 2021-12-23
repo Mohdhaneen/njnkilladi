@@ -28,7 +28,7 @@ Bot Owner Only
 """
 
 ABOUT = """
-♻️ Name :  **ROBERT DOWNEY JR**
+♻️ Name :  **ZYAN MALIK**
     
 ♻️ Creator : **@MOHD_HANEEN**
 
