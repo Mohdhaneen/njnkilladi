@@ -99,11 +99,11 @@ async def start(bot, message):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**താഴെ കാണുന്ന ചാനലിൽ ജോയിൻ ചെയ്താലേ ഫയൽ ലഭിക്കു**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                        InlineKeyboardButton("🔰JOIN OUR MAIN CHANNEL🔰", url=invite_link.invite_link)
                     ]
                 ]
             )
