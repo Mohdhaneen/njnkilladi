@@ -29,11 +29,11 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**താഴെ കാണുന്ന ചാനലിൽ ജോയിൻ ചെയ്താലേ ഫയൽ ലഭിക്കൂ **",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📢 JOIN OUR MAIN CHANNEL 📢", url=invite_link.invite_link)
+                            InlineKeyboardButton("🔰JOIN OUR MAIN CHANNEL🔰", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -53,7 +53,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"** Title:** {search}\n** Rating:** {random.choice(RATING)}\n** Genre:** {random.choice(GENRES)}\n** Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"** Title:** {search}\n** Rating:** {random.choice(RATING)}\n** Genre:** {random.choice(GENRES)}\n** ♻️Uploaded by {message.chat.title}**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"** Title:** {search}\n** Rating:** {random.choice(RATING)}\n** Genre:** {random.choice(GENRES)}\n** Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"** Title:** {search}\n** ♻️Rating:** {random.choice(RATING)}\n** ♻️Genre:** ♻️{random.choice(GENRES)}\n** ♻️Uploaded by {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -127,7 +127,7 @@ async def group(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
+                    [InlineKeyboardButton📃(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")📃]
                 )
         else:
             return
